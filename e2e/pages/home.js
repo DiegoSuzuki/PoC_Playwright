@@ -7,8 +7,8 @@ exports.KabumHomePage = class KabumHomePage {
    */
   constructor(page) {
     this.page = page;
-    this.searchBar = page.locator('#input-busca');
-    this.buttonSearchBar = page.locator('#barraBuscaKabum > div > form > button');
+    this.searchBar = page.locator('input[data-testid="searchbar-search-input"]');
+    this.buttonSearchBar = page.locator('button[data-testid="buttonBuscaKabum"]');
     this.buttonCookieConsent = page.locator('button', { hasText: 'Entendi'});
 
     this.gettingStartedHeader = page.locator('h1', { hasText: 'Getting started' });
